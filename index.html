@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+
+	<!-- Code come from fav icon generator, adpating to all platforms -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/site.webmanifest">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- icon fonts -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<title>Pig game</title>
+</head>
+<body>
+	<div class="container">
+		<div class="gameBoard clearfix">
+			<div id = "player-0-panel" class="player-0-panel active">
+				<div class = "player-name" id="player-0-name">Player 1</div>
+				<div class="player-0-total">40</div>
+				<div class="player-scoreBox">
+					<div class="player-current-label">current</div>
+					<div class="player-0-current">10</div>
+				</div>
+			</div>
+			<div id = "player-1-panel" class="player-1-panel">
+				<div class = "player-name" id="player-1-name">Player 2</div>
+				<div class="player-1-total">40</div>
+				<div class="player-scoreBox">
+					<div class="player-current-label">current</div>
+					<div class="player-1-current">10</div>
+				</div>
+			</div>
+			<input type="number" name="input" class="scoreToBeat" placeholder="Score to beat" onkeydown="return numberInput(event)">
+			<button class="btn btn-new"><i class="fas fa-plus-circle"></i>New game</button>
+			<button class="btn btn-roll"><i class="fas fa-sync-alt"></i>Roll dice</button>
+			<button class="btn btn-hold"><i class="fas fa-arrow-down"></i>Hold</button>
+			<img src="img/dice-4.png" alt="dice" class="dice">
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+
